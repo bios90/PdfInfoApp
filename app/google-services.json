@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "376819467729",
+    "firebase_url": "https://pdfinfoapp.firebaseio.com",
+    "project_id": "pdfinfoapp",
+    "storage_bucket": "pdfinfoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376819467729:android:126fcda2760bd9af",
+        "android_client_info": {
+          "package_name": "dimfcompany.com.pdfinfoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376819467729-f866n30i5cabuf1vaj10e7hhdqhrkir5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dimfcompany.com.pdfinfoapp",
+            "certificate_hash": "568334fecc7db09139a0ae822c8fb60505b6cd4c"
+          }
+        },
+        {
+          "client_id": "376819467729-k5j79kk8br144pgq6qk51i22jku93lfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3PgmXkBvOi-lj4O5iHSaM8AKvW8BXurU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376819467729-k5j79kk8br144pgq6qk51i22jku93lfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
