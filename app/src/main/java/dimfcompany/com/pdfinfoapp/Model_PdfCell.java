@@ -1,10 +1,13 @@
 package dimfcompany.com.pdfinfoapp;
 
+import android.view.View;
+
 public class Model_PdfCell
 {
     String name;
     String urlPdf;
     String urlImg;
+    int categ;
     int v;
 
     int Id;
@@ -12,8 +15,29 @@ public class Model_PdfCell
     String localPdfName;
     String localImgName;
 
+    View viewInScroll;
 
     //region getter and setter
+    public View getViewInScroll()
+    {
+        return viewInScroll;
+    }
+
+    public void setViewInScroll(View viewInScroll)
+    {
+        this.viewInScroll = viewInScroll;
+    }
+
+    public int getCateg()
+    {
+        return categ;
+    }
+
+    public void setCateg(int categ)
+    {
+        this.categ = categ;
+    }
+
     public String getLocalPdfName()
     {
         return localPdfName;

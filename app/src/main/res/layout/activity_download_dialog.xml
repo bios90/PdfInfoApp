@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/blackTrans"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_Download_Dialog">
+
+    <RelativeLayout
+        android:background="@drawable/dialog_bg"
+        android:layout_centerInParent="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/progressTv"
+
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="22sp"
+            android:text="Загрузка"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/dummyView"
+
+            android:background="@color/red"
+            android:layout_below="@id/progressTv"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:id="@+id/dots"
+
+            android:layout_marginTop="4dp"
+            app:LoadingDots_loop_duration="1600"
+            app:LoadingDots_loop_start_delay="800"
+            app:LoadingDots_jump_height="12dp"
+            app:LoadingDots_dots_color="@color/red"
+            app:LoadingDots_dots_size="9dp"
+            app:LoadingDots_dots_count="5"
+            android:layout_below="@id/dummyView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.eyalbira.loadingdots.LoadingDots>
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progressBar"
+
+            android:layout_margin="4dp"
+            android:layout_below="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            style="@style/progressStyle"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

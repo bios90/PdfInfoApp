@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/blackTrans"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_Privacy">
+
+    <RelativeLayout
+        android:background="@drawable/dialog_bg"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv"
+
+            android:padding="8dp"
+            android:background="@drawable/top_red"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:text="Политика Конфиденциальности"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ScrollView
+            android:layout_below="@id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="1. Термин “личная информация”, используемый в настоящем документе, определяется как любая информация, которая идентифицирует или может использоваться для идентификации, связи или поиска человека, к которому такая информация относится. Личная информация, которую мы собираем, будет являться предметом настоящей политики конфиденциальности, с вносимыми время от времени поправками."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="2. Данное приложение разработанно для внутреннего использования в компании ООО &quot;Эй Кей Ресторантс Раша&quot;."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="3. Мы запрашиваем личную информацию при регистрации сотрудников ООО &quot;Эй Кей Ресторантс Раша&quot;, данная информация необходима исключительно для внутреннего использования в компании. "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="4. Мы не продаем контент."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="5. Безопасность Вашей персональной информации не будет нарушена."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="6. Мы не просим информацию о местоположении через наше мобильное приложение."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="7. Мы не отправляем на электронную почту рассылку новостей."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:text="Требуемые разрешения"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="1. Доступ к внешнему накопителю устройства для чтения/записи (используется для сохранения файлов внутреннего распорядка компании в формате PDF/PNG)."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="2. Доступ к сети(используется для регистрации/загрузки файлов внутреннего распорядка компании в формате PDF/PNG)."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:text="Контакты"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:text="e-mail: ilyaevdokimovauditorapp@gmail.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

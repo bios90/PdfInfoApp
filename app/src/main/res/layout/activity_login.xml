@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/blackTrans"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_Download_Dialog">
+
+    <RelativeLayout
+        android:padding="4dp"
+        android:background="@drawable/dialog_bg"
+        android:layout_centerInParent="true"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/progressTv"
+
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="19sp"
+            android:text="Введите пароль пользователя чтобы войти в Holy L.O.K."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etPass"
+
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:padding="8dp"
+            android:textSize="19sp"
+            android:textColor="@color/red"
+            android:textColorHint="@color/redTrans"
+            android:hint="Пароль..."
+            android:gravity="center"
+            android:background="@drawable/et_shadow"
+            android:layout_below="@id/progressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_below="@id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCancel"
+
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:textColor="@color/red"
+                android:background="@drawable/btn_empty"
+                android:text="Отмена"
+                android:layout_width="154dp"
+                android:layout_height="38dp" />
+
+            <Button
+                android:id="@+id/btnEnter"
+
+                android:textAllCaps="false"
+                android:textSize="19sp"
+                android:textColor="@color/bejeviy"
+                android:background="@drawable/btn_red"
+                android:layout_marginLeft="4dp"
+                android:text="Войти"
+                android:layout_width="154dp"
+                android:layout_height="38dp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

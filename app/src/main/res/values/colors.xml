@@ -8,5 +8,6 @@
     <color name="bejeviy">#fff8f2</color>
     <color name="red">#ab1a2f</color>
     <color name="redTrans">#4dab1a2f</color>
-    <color name="blackTrans">#80000000</color>
+    <color name="blackTrans">#4d000000</color>
+    <color name="myBrown">#ca3433</color>
 </resources>

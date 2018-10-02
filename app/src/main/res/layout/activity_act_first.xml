@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:clipToPadding="false"
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+
     android:background="@drawable/backgroundbg"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,11 +11,43 @@
     tools:context=".ActFirst">
 
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+
+        android:background="@drawable/image_shadow"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ilya_bg"
+        android:layout_width="112dp"
+        android:layout_height="112dp" />
+
+
+        <ImageView
+            android:id="@+id/imgInfo"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_info"
+            android:layout_alignParentRight="true"
+            android:elevation="10dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+
     <LinearLayout
+        android:id="@+id/laMenu"
+
+        android:layout_above="@+id/laRefresh"
+        android:layout_below="@id/logo"
         android:padding="18dp"
         android:clipToPadding="false"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -25,7 +58,7 @@
             android:background="@drawable/btn_red"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="50dp">
+            android:layout_height="44dp">
 
 
             <TextView
@@ -56,7 +89,7 @@
             android:background="@drawable/btn_red"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="50dp">
+            android:layout_height="44dp">
 
 
             <TextView
@@ -87,7 +120,7 @@
             android:background="@drawable/btn_red"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="50dp">
+            android:layout_height="44dp">
 
 
             <TextView
@@ -119,14 +152,14 @@
             android:background="@drawable/btn_red"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="50dp">
+            android:layout_height="44dp">
 
 
             <TextView
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textAllCaps="false"
-                android:text="Напитки, мороженное"
+                android:text="Напитки, мороженое"
                 android:textColor="@color/bejeviy"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -150,7 +183,7 @@
             android:background="@drawable/btn_red"
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
-            android:layout_height="50dp">
+            android:layout_height="44dp">
 
 
             <TextView
@@ -173,6 +206,72 @@
 
         </RelativeLayout>
 
+
+        <RelativeLayout
+            android:id="@+id/laProduct"
+
+            android:layout_marginTop="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/btn_red"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="44dp">
+
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:text="Работа с продуктом"
+                android:textColor="@color/bejeviy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:src="@drawable/ic_product3"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:elevation="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/laUrls"
+
+            android:layout_marginTop="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/btn_brown"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="44dp">
+
+
+            <TextView
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textAllCaps="false"
+                android:text="Ссылки"
+                android:textColor="@color/bejeviy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:src="@drawable/ic_internet"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:elevation="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
     </LinearLayout>
 
 
@@ -186,7 +285,7 @@
         android:background="@drawable/btn_red"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="44dp">
 
 
         <TextView
@@ -211,10 +310,12 @@
 
     </RelativeLayout>
 
+
+
     <RelativeLayout
         android:id="@+id/laFirstStart"
 
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="@color/blackTrans"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -248,8 +349,27 @@
                 android:layout_height="80dp" />
 
         </LinearLayout>
-
-
+    </RelativeLayout>
     </RelativeLayout>
 
-</RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/drawerLA"-->
+        <!---->
+        <!--android:layout_gravity="start"-->
+        <!--android:background="@color/redTrans"-->
+        <!--android:layout_width="280dp"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/testTv"-->
+
+            <!--android:textSize="28sp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Myhahahaha"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</RelativeLayout>-->
+
+</android.support.v4.widget.DrawerLayout>

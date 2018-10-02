@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="progressStyle" parent="NumberProgressBar_Default">
+        <item name="progress_reached_bar_height">8dp</item>
+        <item name="progress_unreached_bar_height">5dp</item>
+        <item name="progress_reached_color">#ab1a2f</item>
+        <item name="progress_text_color">#ab1a2f</item>
+        <item name="progress_text_size">16sp</item>
+    </style>
+
 </resources>
